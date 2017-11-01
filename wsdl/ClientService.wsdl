@@ -569,6 +569,7 @@
             <s:sequence>
               <s:element minOccurs="0" maxOccurs="1" name="ClientIDs" type="tns:ArrayOfString" />
               <s:element minOccurs="0" maxOccurs="1" name="SearchText" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LastModifiedDate" type="s:dateTime" />
             </s:sequence>
           </s:extension>
         </s:complexContent>

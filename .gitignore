@@ -18,3 +18,4 @@ tmp
 .rbenv-version
 .ruby-version
 .env
+.idea/
