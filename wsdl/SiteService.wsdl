@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://clients.mindbodyonline.com/API/0_4" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5_1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://clients.mindbodyonline.com/API/0_4" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to sites and locations.</wsdl:documentation>
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1">
       <s:import namespace="http://clients.mindbodyonline.com/API/0_4" />
       <s:element name="GetSites">
         <s:complexType>
@@ -626,7 +626,7 @@
   <wsdl:binding name="Site_x0020_ServiceSoap" type="tns:Site_x0020_ServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetSites">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetSites" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetSites" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -635,7 +635,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetLocations">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetLocations" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetLocations" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -644,7 +644,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetActivationCode">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetActivationCode" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetActivationCode" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -653,7 +653,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetPrograms">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetPrograms" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetPrograms" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -662,7 +662,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetSessionTypes">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetSessionTypes" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetSessionTypes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -671,7 +671,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetResources">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetResources" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetResources" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -680,7 +680,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetRelationships">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetRelationships" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetRelationships" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -689,7 +689,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetResourceSchedule">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetResourceSchedule" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetResourceSchedule" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -698,7 +698,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ReserveResource">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/ReserveResource" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/ReserveResource" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -710,7 +710,7 @@
   <wsdl:service name="Site_x0020_Service">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to sites and locations.</wsdl:documentation>
     <wsdl:port name="Site_x0020_ServiceSoap" binding="tns:Site_x0020_ServiceSoap">
-      <soap:address location="https://api.mindbodyonline.com/0_5/SiteService.asmx" />
+      <soap:address location="https://api.mindbodyonline.com/0_5_1/SiteService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

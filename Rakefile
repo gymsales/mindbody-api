@@ -39,7 +39,7 @@ namespace :wsdl do
   task :update do
     require 'open-uri'
 
-    url = "https://api.mindbodyonline.com/0_5/%sService.asmx?wsdl"
+    url = "https://api.mindbodyonline.com/0_5_1/%sService.asmx?wsdl"
     services = %w{Appointment Class Client Finder Sale Site Staff}
 
     services.each do |service|

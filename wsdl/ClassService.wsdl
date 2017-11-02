@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5_1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to classes and enrollments.</wsdl:documentation>
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1">
       <s:element name="GetClasses">
         <s:complexType>
           <s:sequence>
@@ -1301,7 +1301,7 @@
   <wsdl:binding name="Class_x0020_ServiceSoap" type="tns:Class_x0020_ServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetClasses">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClasses" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClasses" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1310,7 +1310,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateClientVisits">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/UpdateClientVisits" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/UpdateClientVisits" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1319,7 +1319,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClassVisits">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClassVisits" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClassVisits" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1328,7 +1328,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClassDescriptions">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClassDescriptions" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClassDescriptions" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1337,7 +1337,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetEnrollments">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetEnrollments" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetEnrollments" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1346,7 +1346,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClassSchedules">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClassSchedules" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClassSchedules" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1355,7 +1355,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddClientsToClasses">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddClientsToClasses" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddClientsToClasses" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1364,7 +1364,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="RemoveClientsFromClasses">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/RemoveClientsFromClasses" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/RemoveClientsFromClasses" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1373,7 +1373,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddClientsToEnrollments">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddClientsToEnrollments" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddClientsToEnrollments" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1382,7 +1382,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="RemoveFromWaitlist">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/RemoveFromWaitlist" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/RemoveFromWaitlist" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1391,7 +1391,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetSemesters">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetSemesters" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetSemesters" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1400,7 +1400,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetCourses">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetCourses" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetCourses" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1409,7 +1409,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetWaitlistEntries">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetWaitlistEntries" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetWaitlistEntries" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1421,7 +1421,7 @@
   <wsdl:service name="Class_x0020_Service">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to classes and enrollments.</wsdl:documentation>
     <wsdl:port name="Class_x0020_ServiceSoap" binding="tns:Class_x0020_ServiceSoap">
-      <soap:address location="https://api.mindbodyonline.com/0_5/ClassService.asmx" />
+      <soap:address location="https://api.mindbodyonline.com/0_5_1/ClassService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

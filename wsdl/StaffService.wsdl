@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5_1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to staff.</wsdl:documentation>
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1">
       <s:element name="GetStaff">
         <s:complexType>
           <s:sequence>
@@ -712,7 +712,7 @@
   <wsdl:binding name="Staff_x0020_ServiceSoap" type="tns:Staff_x0020_ServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetStaff">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetStaff" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetStaff" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -721,7 +721,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetStaffPermissions">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetStaffPermissions" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetStaffPermissions" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -730,7 +730,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddOrUpdateStaff">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddOrUpdateStaff" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddOrUpdateStaff" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -739,7 +739,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetStaffImgURL">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetStaffImgURL" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetStaffImgURL" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -751,7 +751,7 @@
   <wsdl:service name="Staff_x0020_Service">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to staff.</wsdl:documentation>
     <wsdl:port name="Staff_x0020_ServiceSoap" binding="tns:Staff_x0020_ServiceSoap">
-      <soap:address location="https://api.mindbodyonline.com/0_5/StaffService.asmx" />
+      <soap:address location="https://api.mindbodyonline.com/0_5_1/StaffService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5_1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to clients.</wsdl:documentation>
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1">
       <s:element name="AddArrival">
         <s:complexType>
           <s:sequence>
@@ -1752,7 +1752,7 @@
   <wsdl:binding name="Client_x0020_ServiceSoap" type="tns:Client_x0020_ServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="AddArrival">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddArrival" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddArrival" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1761,7 +1761,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddOrUpdateClients">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddOrUpdateClients" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddOrUpdateClients" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1770,7 +1770,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClients">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClients" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClients" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1779,7 +1779,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetCustomClientFields">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetCustomClientFields" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetCustomClientFields" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1788,7 +1788,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientIndexes">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientIndexes" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientIndexes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1797,7 +1797,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientContactLogs">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientContactLogs" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientContactLogs" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1806,7 +1806,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddOrUpdateContactLogs">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddOrUpdateContactLogs" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddOrUpdateContactLogs" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1815,7 +1815,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetContactLogTypes">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetContactLogTypes" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetContactLogTypes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1824,7 +1824,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UploadClientDocument">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/UploadClientDocument" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/UploadClientDocument" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1833,7 +1833,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientFormulaNotes">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientFormulaNotes" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientFormulaNotes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1842,7 +1842,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AddClientFormulaNote">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/AddClientFormulaNote" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/AddClientFormulaNote" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1851,7 +1851,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DeleteClientFormulaNote">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/DeleteClientFormulaNote" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/DeleteClientFormulaNote" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1860,7 +1860,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientReferralTypes">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientReferralTypes" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientReferralTypes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1869,7 +1869,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetActiveClientMemberships">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetActiveClientMemberships" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetActiveClientMemberships" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1878,7 +1878,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientContracts">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientContracts" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientContracts" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1887,7 +1887,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientAccountBalances">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientAccountBalances" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientAccountBalances" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1896,7 +1896,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientServices">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientServices" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientServices" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1905,7 +1905,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientVisits">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientVisits" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientVisits" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1914,7 +1914,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientPurchases">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientPurchases" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientPurchases" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1923,7 +1923,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetClientSchedule">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetClientSchedule" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetClientSchedule" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1932,7 +1932,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetRequiredClientFields">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetRequiredClientFields" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetRequiredClientFields" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1941,7 +1941,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ValidateLogin">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/ValidateLogin" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/ValidateLogin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1950,7 +1950,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateClientServices">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/UpdateClientServices" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/UpdateClientServices" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1959,7 +1959,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SendUserNewPassword">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/SendUserNewPassword" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/SendUserNewPassword" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1971,7 +1971,7 @@
   <wsdl:service name="Client_x0020_Service">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to clients.</wsdl:documentation>
     <wsdl:port name="Client_x0020_ServiceSoap" binding="tns:Client_x0020_ServiceSoap">
-      <soap:address location="https://api.mindbodyonline.com/0_5/ClientService.asmx" />
+      <soap:address location="https://api.mindbodyonline.com/0_5_1/ClientService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

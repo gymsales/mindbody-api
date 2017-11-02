@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://clients.mindbodyonline.com/api/0_5_1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to sales.</wsdl:documentation>
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://clients.mindbodyonline.com/api/0_5_1">
       <s:element name="GetAcceptedCardType">
         <s:complexType>
           <s:sequence>
@@ -1391,7 +1391,7 @@
   <wsdl:binding name="Sale_x0020_ServiceSoap" type="tns:Sale_x0020_ServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetAcceptedCardType">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetAcceptedCardType" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetAcceptedCardType" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1400,7 +1400,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="CheckoutShoppingCart">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/CheckoutShoppingCart" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/CheckoutShoppingCart" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1409,7 +1409,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetSales">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetSales" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetSales" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1418,7 +1418,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetServices">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetServices" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetServices" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1427,7 +1427,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateServices">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/UpdateServices" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/UpdateServices" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1436,7 +1436,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetPackages">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetPackages" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetPackages" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1445,7 +1445,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetProducts">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetProducts" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetProducts" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1454,7 +1454,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UpdateProducts">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/UpdateProducts" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/UpdateProducts" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1463,7 +1463,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="RedeemSpaFinderWellnessCard">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/RedeemSpaFinderWellnessCard" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/RedeemSpaFinderWellnessCard" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1472,7 +1472,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetCustomPaymentMethods">
-      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5/GetCustomPaymentMethods" style="document" />
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetCustomPaymentMethods" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1484,7 +1484,7 @@
   <wsdl:service name="Sale_x0020_Service">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides methods and attributes relating to sales.</wsdl:documentation>
     <wsdl:port name="Sale_x0020_ServiceSoap" binding="tns:Sale_x0020_ServiceSoap">
-      <soap:address location="https://api.mindbodyonline.com/0_5/SaleService.asmx" />
+      <soap:address location="https://api.mindbodyonline.com/0_5_1/SaleService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
