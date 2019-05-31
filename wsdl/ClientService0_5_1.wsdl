@@ -590,6 +590,51 @@
           </s:extension>
         </s:complexContent>
       </s:complexType>
+      <s:element name="GetCrossRegionalClientAssociations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="tns:GetCrossRegionalClientAssociationsRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCrossRegionalClientAssociationsRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:MBRequest">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCrossRegionalClientAssociationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCrossRegionalClientAssociationsResult" type="tns:GetCrossRegionalClientAssociationsResult"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCrossRegionalClientAssociationsResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:MBResult">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CrossRegionalClientAssociations" type="tns:ArrayOfCrossRegionalAssociation"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfCrossRegionalAssociation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CrossRegionalAssociation" nillable="true" type="tns:CrossRegionalAssociation"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CrossRegionalAssociation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SiteID" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="UniqueID" type="s:long"/>
+        </s:sequence>
+      </s:complexType>
       <s:element name="GetCustomClientFields">
         <s:complexType>
           <s:sequence>
@@ -1501,6 +1546,12 @@
   <wsdl:message name="GetClientsSoapOut">
     <wsdl:part name="parameters" element="tns:GetClientsResponse" />
   </wsdl:message>
+  <wsdl:message name="GetCrossRegionalClientAssociationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCrossRegionalClientAssociations"/>
+  </wsdl:message>
+  <wsdl:message name="GetCrossRegionalClientAssociationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCrossRegionalClientAssociationsResponse"/>
+  </wsdl:message>
   <wsdl:message name="GetCustomClientFieldsSoapIn">
     <wsdl:part name="parameters" element="tns:GetCustomClientFields" />
   </wsdl:message>
@@ -1643,6 +1694,13 @@
       <wsdl:input message="tns:GetClientsSoapIn" />
       <wsdl:output message="tns:GetClientsSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetCrossRegionalClientAssociations">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        Gets a list of Client IDs representing the same client at different sites within the region.
+      </wsdl:documentation>
+      <wsdl:input message="tns:GetCrossRegionalClientAssociationsSoapIn"/>
+      <wsdl:output message="tns:GetCrossRegionalClientAssociationsSoapOut"/>
+    </wsdl:operation>
     <wsdl:operation name="GetCustomClientFields">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets a list of currently available client indexes.</wsdl:documentation>
       <wsdl:input message="tns:GetCustomClientFieldsSoapIn" />
@@ -1776,6 +1834,15 @@
       </wsdl:input>
       <wsdl:output>
         <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrossRegionalClientAssociations">
+      <soap:operation soapAction="http://clients.mindbodyonline.com/api/0_5_1/GetCrossRegionalClientAssociations" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetCustomClientFields">
